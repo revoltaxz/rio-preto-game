@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class GameController : MonoBehaviour {
+	
 
 	public GameObject paredeBatida;
 	public GameObject hazard;
@@ -59,6 +60,7 @@ public class GameController : MonoBehaviour {
 				if (score >= 140) {
 					hazardCount = 8;
 					spawnWait = 0.8f;
+
 				}
 				//LEVEL 2
 				if (score >= 220) {
@@ -84,7 +86,7 @@ public class GameController : MonoBehaviour {
 
 				//IMPOSSIBLE LEVEL
 				if (score > 1000) {
-					hazardCount = 25;
+					hazardCount = 19;
 					spawnWait = 0.2f;
 				}
 			}
